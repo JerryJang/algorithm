@@ -11,12 +11,12 @@ public class Main {
 
     for(int i =0; i<n; i++) {
         for(int j=0; j<m; j++){
-            if(str.charAt(i) == check.charAt(j)) {
+            if(str.charAt(i) == check.charAt(0)) {
                 // System.out.println("i:"+i+" j:"+j);
                     int temp = 0;
                     int temp2 = m;
+
                 while(m>0) {
-                   
                     // System.out.println("i:"+i+temp+" j:"+j+temp);
                     if(str.charAt(i+temp) != check.charAt(j+temp)){
                         break;
