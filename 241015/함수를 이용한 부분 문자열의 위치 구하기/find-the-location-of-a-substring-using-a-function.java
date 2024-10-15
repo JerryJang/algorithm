@@ -17,6 +17,7 @@ public class Main {
                     int temp2 = m;
 
                 while(m>0) {
+                    if(i+temp>=str.length()) break;
                     // System.out.println("i:"+i+temp+" j:"+j+temp);
                     if(str.charAt(i+temp) != check.charAt(j+temp)){
                         break;
