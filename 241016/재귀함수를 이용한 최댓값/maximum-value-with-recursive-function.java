@@ -10,8 +10,10 @@ public class Main {
         if(n==0) return 0;
 
         solution(n-1);
+        //System.out.println("n: "+n);
 
         if(arr[n]>max) {
+            // System.out.println("o :"+arr[n]);
             max = arr[n];
         }
 
@@ -23,7 +25,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        for(int i=0; i<n; i++) {
+        for(int i=1; i<=n; i++) {
             arr[i] = sc.nextInt();
         }
 
