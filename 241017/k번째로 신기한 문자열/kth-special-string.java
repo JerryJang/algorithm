@@ -10,10 +10,12 @@ public class Main {
         int temp = 0;
         int cnt = 0;
 
+        
+
         for(int i=0; i<n; i++){
             // System.out.println("arr :"+arr[i].substring(0,lenthOfT).getClass().getName());
             // System.out.println("T :"+T.getClass().getName());
-            if(arr[i].substring(0,lenthOfT).equals(T)) {
+            if(arr[i].substring(0,lenthOfT).equals(T) && arr[i].length() > lenthOfT) {
                 cnt++;       
             }
         }
@@ -22,7 +24,7 @@ public class Main {
         String[] filteredArr = new String[cnt];
 
         for(int k=0; k<n; k++) {
-            if(arr[k].substring(0,lenthOfT).equals(T)){ 
+            if(arr[k].substring(0,lenthOfT).equals(T)&& arr[k].length() > lenthOfT){ 
                 filteredArr[temp] = arr[k]; 
                 temp++;     
                 }
