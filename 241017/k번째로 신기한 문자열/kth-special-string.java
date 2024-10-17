@@ -15,23 +15,19 @@ public class Main {
         for(int i=0; i<n; i++){
             // System.out.println("arr :"+arr[i].substring(0,lenthOfT).getClass().getName());
             // System.out.println("T :"+T.getClass().getName());
-            if(arr[i].substring(0,lenthOfT).equals(T) && arr[i].length() >= lenthOfT) {
+            if(arr[i].substring(0,lenthOfT).equals(T) && arr[i].length() >= lenthOfT && !(arr[i].length() < lenthOfT)) {
                 cnt++;       
-            } else if(arr[i].length() < lenthOfT) {
-                continue;
-            }
+            } 
         }
         // System.out.println(cnt);
 
         String[] filteredArr = new String[cnt];
 
         for(int k=0; k<n; k++) {
-            if(arr[k].substring(0,lenthOfT).equals(T)&& arr[k].length() >= lenthOfT){ 
+            if(arr[k].substring(0,lenthOfT).equals(T)&& arr[k].length() >= lenthOfT&& !(arr[k].length() < lenthOfT)){ 
                 filteredArr[temp] = arr[k]; 
                 temp++;     
-                }else if(arr[k].length() < lenthOfT) {
-                continue;
-            }
+                }
         }
 
         Arrays.sort(filteredArr);
