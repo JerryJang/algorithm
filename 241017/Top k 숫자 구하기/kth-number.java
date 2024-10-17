@@ -7,19 +7,19 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int m = sc.nextInt();
+        int k = sc.nextInt();
 
-        String[] arr = new String[n];
+        int[] arr = new int[n];
 
         for(int i=0; i<n; i++) {
 
-            arr[i] = sc.next();
+            arr[i] = sc.nextInt();
             
         } 
 
         Arrays.sort(arr);
 
-        System.out.print(arr[m-1]);
+        System.out.print(arr[k-1]);
  
     }
 }
