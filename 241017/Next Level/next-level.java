@@ -5,7 +5,7 @@ class User {
     int level;
 
     public User() {
-        this.id = "";
+        this.id = "codetree";
         this.level = 10;
     }
 
@@ -22,14 +22,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         
         User user = new User();
-        System.out.println("user codetree lv "+user.level);
+        System.out.println("user "+user.id+" lv "+user.level);
 
 
         String str = sc.next();
         int n = sc.nextInt();
-
+        user.id = str;
         user.level = n;
-        System.out.println("user hello lv " + user.level);
+          System.out.println("user "+user.id+" lv "+user.level);
     
     
     
