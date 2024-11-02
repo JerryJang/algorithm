@@ -8,7 +8,7 @@ int main() {
 
     b = a;
 
-    cout<<a<<endl;
+    cout<<a<<" ";
     cout<<b<<endl;
     cout<<a*b;
 
